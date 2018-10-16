@@ -1,0 +1,8 @@
+
+export const GET_SHARE_COURSE_TEACHER_LIST = 'GET_SHARE_COURSE_TEACHER_LIST'
+
+export const CHANGE_LOADING = 'CHANGE_LOADING'
+
+export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE'
+export const CHANGE_Active_Tabs = 'CHANGE_Active_Tabs'
+

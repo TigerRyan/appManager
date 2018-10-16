@@ -1,0 +1,36 @@
+@import "../../base.less";
+
+.sidebar-item {
+  text-align: left;
+  overflow: hidden;
+  .icon-font {
+    vertical-align: middle;
+    margin-right: 10px;
+    position: relative;
+    font-size: 20px;
+  }
+  .el-menu-item, .el-submenu__title {
+    padding: 0;
+    background-color: @bg-white;
+    height:48px;
+    line-height: 48px;
+    &:hover {
+      i {
+        color: @sidebar-active;
+      }
+      color: @sidebar-active;
+      border-left: 3px solid @sidebar-active;
+      background-color: @bg-white;
+    }
+    &.is-active {
+      border-left: 3px solid @sidebar-active;
+    }
+  }
+  .el-submenu.is-active > .el-submenu__title {
+    i {
+      color: @sidebar-active;
+    }
+    border-left: 3px solid @sidebar-active;
+    color: @sidebar-active;
+  }
+}

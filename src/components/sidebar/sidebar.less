@@ -1,0 +1,36 @@
+@import "../../base.less";
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: @sidebar-width;
+  box-shadow: 0 0 5px @sidebar-shadow;
+  .logo {
+    height: @logo-height;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    img {
+      max-height: 80%;
+      max-width: 80%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: @bg-white;
+      border-radius: 50%;
+    }
+  }
+  .el-menu {
+    overflow-y: scroll;
+    transition: all .3s ease;
+    border-top: 1px solid @sidebar-border;
+    position: absolute;
+    top: @logo-height;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: @bg-white;
+  }
+}
