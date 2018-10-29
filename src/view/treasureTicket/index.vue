@@ -770,7 +770,7 @@ export default {
           })
           if(idx==-1){
             getUserInfoApi(this.formInline.phone).then( res =>{
-                this.userIds .push(res.id)
+                this.userIds.push(res.id)
                 this.gridData.push(res)
                 this.formInline.phone = null
           })
